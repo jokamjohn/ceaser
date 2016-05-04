@@ -14,6 +14,10 @@ class CreateDataTable extends Migration
     {
         Schema::create('data', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('meterNumber');
+            $table->string('voucher');
+            $table->string('currentUnits');
+            $table->timestamp('date');
             $table->timestamps();
         });
     }
